@@ -1,0 +1,79 @@
+site_name: netgrep
+site_url: https://netgrep.jfox.io
+site_author: Jonathan Fox
+site_description: Solution writeups for OSINT challenges
+
+repo_url: https://github.com/jonathanfox5/netgrep
+repo_name: netgrep
+
+copyright: Copyright &copy; 2026 Jonathan Fox
+
+docs_dir: pages
+
+nav:
+  - Home: index.md
+  - Writeups: writeups.md
+
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: indigo
+    scheme: slate
+  font: 
+    text: Source Sans 3
+    code: Source Code Pro
+  logo: img/header.svg
+  favicon: img/logo_square.png
+  custom_dir: pages/overrides
+
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.indexes
+    - search.suggest
+    - toc.integrate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - mdx_truly_sane_lists:
+      nested_indent: 2
+      truly_sane: true
+  - attr_list
+  - tables
+
+plugins:
+  - glightbox
+  - search
+  - blog:
+      post_readtime: false
+  - meta
+  - tags
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      js_files:
+        - javascript/tablesort.js
+      css_files:
+        - css/extra.css
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - javascript/tablesort.js
