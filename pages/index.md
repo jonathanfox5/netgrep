@@ -13,13 +13,13 @@ hide:
 
 ## Welcome!
 
-This site hosts my writeups to OSINT (open source intelligence) challenges. I complete them because I enjoy puzzles but the underlying techniques are also generally useful to learn. More often than I'd like to, I find myself having to find & verify documents / pieces of information that are deeply buried somewhere in the internet or are not longer actively published. On a personal level, a highlight was using the aforementioned technique to locate the grave of my biological grandmother, whom I knew very little about at the time.
+This site hosts my writeups to OSINT (open source intelligence) challenges. I complete them because I enjoy puzzles but the underlying techniques are also generally useful to learn. More often than I'd like to, I find myself having to find & verify documents / pieces of information that are deeply buried somewhere in the internet or are no longer actively published. On a personal level, a highlight was using the aforementioned techniques to locate the grave of my biological grandmother, whom I knew very little about at the time.
 
 You can access the list of writeups [by clicking here](blog/index.md).
 
 ## Over-explaining the name of the website
 
-The website name `netgrep` is a very geeky reference to the grep command line program (available on Linux and Mac systems, amoungst others) that is used to search text files. In a similar way to how "googling" is often used to mean "searching", [grepping](https://en.wiktionary.org/wiki/grepping) is also often genericised. Hence, `netgrep` is "searching the internet".
+The website name `netgrep` is a very geeky reference to the grep command line program (available on Linux and Mac systems, amongst others) that is used to search text files. In a similar way to how "googling" is often used to mean "searching", [grepping](https://en.wiktionary.org/wiki/grepping) is also often genericised. Hence, `netgrep` is "searching the internet".
 
 ## That logo looks familiar...
 
