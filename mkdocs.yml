@@ -12,7 +12,8 @@ docs_dir: pages
 
 nav:
   - Home: index.md
-  - Writeups: writeups.md
+  - Writeups:
+    - blog/index.md
 
 theme:
   name: material
@@ -62,19 +63,20 @@ plugins:
       post_date_format: "yyyy-MM-dd"
   - meta
   - tags
-  # - minify:
-  #     minify_html: true
-  #     minify_js: true
-  #     minify_css: true
-  #     htmlmin_opts:
-  #         remove_comments: true
-  #     js_files:
-  #       - javascript/tablesort.js
-  #     css_files:
-  #       - css/extra.css
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      js_files:
+        - javascript/tablesort_select.js
+      css_files:
+        - css/extra.css
 
 extra_css:
   - css/extra.css
 
 extra_javascript:
-  - javascript/tablesort.js
+  - javascript/tablesort.min.js
+  - javascript/tablesort_select.js

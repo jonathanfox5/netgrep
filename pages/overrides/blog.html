@@ -9,26 +9,28 @@
 
     <!-- Posts -->
     <main class="md-typeset">
-      <table>
-        <thead>
-          <tr>
-            <th>Writeup Link</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for post in posts %}
-          <tr>
-            <td><a href="{{ post.url | url }}">{{ post.title }}</a></td>
-            <td>
-              <time datetime="{{ post.config.date.created }}"
-                >{{- post.config.date.created | date -}}</time
-              >
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+      <article>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort-default>Writeup Link</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for post in posts %}
+            <tr>
+              <td><a href="{{ post.url | url }}">{{ post.title }}</a></td>
+              <td>
+                <time datetime="{{ post.config.date.created }}"
+                  >{{- post.config.date.created | date -}}</time
+                >
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </article>
     </main>
   </div>
 </div>
