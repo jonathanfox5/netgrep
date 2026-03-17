@@ -6,4 +6,4 @@ links:
   Link to challenge: https://gralhix.com/list-of-osint-exercises
 ---
 
---8<-- "pages/solutions/gralhix_020/post.md"
+--8<-- "pages/solutions_working/gralhix_020/post.md"

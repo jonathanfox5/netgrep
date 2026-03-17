@@ -1,4 +1,4 @@
---8<-- "pages/solutions/gralhix_preamble.md"
+--8<-- "pages/solutions_working/gralhix_preamble.md"
 
 ## Comparison to Other Solutions
 

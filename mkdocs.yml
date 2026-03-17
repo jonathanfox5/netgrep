@@ -73,6 +73,10 @@ plugins:
         - javascript/tablesort_select.js
       css_files:
         - css/extra.css
+  - exclude-search:
+      exclude:
+        - solutions_working/*
+
 
 extra_css:
   - css/extra.css
