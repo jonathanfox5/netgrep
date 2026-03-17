@@ -59,18 +59,19 @@ plugins:
   - search
   - blog:
       post_readtime: false
+      post_date_format: "yyyy-MM-dd"
   - meta
   - tags
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-          remove_comments: true
-      js_files:
-        - javascript/tablesort.js
-      css_files:
-        - css/extra.css
+  # - minify:
+  #     minify_html: true
+  #     minify_js: true
+  #     minify_css: true
+  #     htmlmin_opts:
+  #         remove_comments: true
+  #     js_files:
+  #       - javascript/tablesort.js
+  #     css_files:
+  #       - css/extra.css
 
 extra_css:
   - css/extra.css

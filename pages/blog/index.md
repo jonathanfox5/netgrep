@@ -1,1 +1,7 @@
-# All posts
+---
+hide:
+  - navigation
+  - toc
+---
+
+# All Writeups
