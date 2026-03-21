@@ -63,6 +63,10 @@ plugins:
       post_date_format: "yyyy-MM-dd"
   - meta
   - tags
+  - optimize:
+      optimize_png_strip: true
+      optimize_exclude: 
+        - img/* # exclude site images
   - minify:
       minify_html: true
       minify_js: true
