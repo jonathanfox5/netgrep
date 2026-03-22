@@ -58,7 +58,8 @@ markdown_extensions:
   - pymdownx.blocks.caption
 
 plugins:
-  - glightbox
+  - glightbox:
+      auto_caption: true
   - search
   - blog:
       post_readtime: false
