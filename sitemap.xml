@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://netgrep.jfox.io/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/blog/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/blog/2026/03/22/gralhix_osint013/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/blog/2026/03/16/writeup58-gralhix-osint020/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/solutions_working/gralhix_preamble/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/blog/archive/2026/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+    <url>
+         <loc>https://netgrep.jfox.io/blog/category/grahlix-osint-solutions/</loc>
+         <lastmod>2026-03-22</lastmod>
+    </url>
+</urlset>
