@@ -92,5 +92,5 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/jonathanfox5/
-      name: jonathanfox5 on Github
+      link: https://github.com/jonathanfox5/netgrep
+      name: netgrep on Github
