@@ -1,5 +1,6 @@
 ---
 title: Writeup&#58; Gralhix OSINT013
+slug: gralhix_osint013
 date:
   created: 2026-03-22
 links:
@@ -10,65 +11,68 @@ links:
 
 ## Introduction
 
-I picked this challenge because it said that "Unfortunately it is no longer possible to solve this exercise due to changes on Google Maps." I was curious as to what made it impossible so I gave it a go. Also, telling me something is impossible is a bit like calling Marty McFly chicken... I just can't help myself...
+I picked this challenge up because the challenge page stated "Unfortunately it is no longer possible to solve this exercise due to changes on Google Maps." I was very curious as to what might have changed in Google Maps to make it impossible. Also, telling me something is impossible is a bit like calling Marty McFly chicken... I just can't help myself...
 
 ![Nobody calls McFly chicken](chicken.jpeg)
 /// caption
 Nobody calls McFly chicken
 ///
 
-Interesting parts of the solution:
+(Potentially) interesting parts of the solution:
 
-- Getting the precise capture date of street view footage
-- Using Wolfram Alpha for historical data
-- Finding out that the reason why it's impossible is because Google have blurred out certain features in street view
+- Finding a "wrong" answer that still feels satisfying
+- Using a tool to get the capture timestamp of street view footage
+- Using Wolfram Alpha for correlating historical data
+- [Gridreferencefinder.com](https://gridreferencefinder.com/), probably one of the most visited websites on my work computer
 
-## Locating
+## Location
 
-Given bio and the instruction to "locate".
+We are given a picture of a Twitter bio and the instruction to "locate". The location is a `what 3 words` location - these are essentially co-ordinates encoded into words. We are encouraged to use these in the UK when calling emergency services but I'm not sure how globally widespread they are!
 
-What 3 words location. We use these at work to avoid the use of co-ordinates where we can.
+![What 3 words location](locate.jpeg)
+/// caption
+`What 3 words` location
+///
 
-![Twitter Location](locate.jpeg)
-
-Let's convert back to co-ordinates so that we can
-
-<https://gridreferencefinder.com/#ll=42.697324|23.343658|regard.diggers.edges|1>
+Let's convert it back to co-ordinates so that we can look it up using other tools, using <https://gridreferencefinder.com/>:
 
 ![Grid reference finder](grf.jpeg)
 
-Open in google maps. "Unfortunately it is no longer possible to solve this exercise due to changes on Google Maps."
+Let's now open it in google maps using an (unintentional) clue from the challenge page: "Unfortunately it is no longer possible to solve this exercise due to changes on **Google Maps**."
 
 ```
 !gm 42.697324, 23.343658
 ```
 
-Nothing immediately obvious by scanning the map.
+There is nothing immediately obvious by scanning the map, other than we are in the city of Sofia, matching the author's name. This indicates that we are probably on the right track!
 
-Zoomed into street view, again nothing immediately obvious. Date of the image is July 2014, so would have existed when challenge was posted.
+Given that `what 3 words` is on a 3 metre x 3 metre grid, it indicates a precise location. I therefore zoomed directly into street view on the location but, again, there was nothing immediately obvious. The date of the image is July 2014, so would have existed when challenge was posted. However, it's possible that there was an image on street view after this that has since been deleted - this could possible explain why the challenge is "impossible".
 
 ![Street view date](gm_date.jpeg)
+/// caption
+Street view date
+///
 
-Only 1 date available, no other imagery. Quite old, had newer images been removed?
+## Finding the phase of the moon
 
-## Phase of the moon
+I wondered if I could get the phase of the moon when the street view was captured so I googled "get date of streetview". The first result was <https://streetviewdate.com/> which gave this result when I pasted the google maps URL of the street view into it:
 
-I wondered if I could get the phase of the moon when the streetview was captured. Googled "get date of streetview". First result was <https://streetviewdate.com/>
+![Street view time of capture](pano_date.jpeg)
+/// caption
+Street view time of capture
+///
 
-Gave this result:
-
-![Pano time of capture](pano_date.jpeg)
-
-Loaded up wolfram alpha, which I normally use to find the weather at a specific point in time.
-
-Gave this result:
+I then loaded up [Wolfram Alpha](https://www.wolframalpha.com), which is a website that links lots of different datasets together (amongst other things). It's quite useful for finding historical weather so I wondered if it could also do moon phase. It gave this result:
 
 ![Phase of the moon](wa.jpeg)
+/// caption
+Phase of the moon
+///
 
-"Waxing crescent moon"
+This gives an answer of "waxing crescent moon", which is unfortunately not the solution to the challenge! The desired answer can no longer be seen because it has been blurred out on google maps (I won't spoil the answer here, I recommend that you watch the [author's video](https://www.youtube.com/watch?v=pgu3iFvyBPQ)). However, I still consider this a "good" solution which contains interesting techniques (I would say that though, wouldn't I!).
 
-## Table
+## Final Answers
 
-| Blah | Blah  |
-| ---- | ----- |
-| Test | Test2 |
+| Item | Information Required | Answer                                                              |
+| ---- | -------------------- | ------------------------------------------------------------------- |
+| a    | Phase of the moon    | Waxing crescent moon (not the answer the challenge was looking for) |
