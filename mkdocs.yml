@@ -54,6 +54,8 @@ markdown_extensions:
       truly_sane: true
   - attr_list
   - tables
+  - md_in_html
+  - pymdownx.blocks.caption
 
 plugins:
   - glightbox
